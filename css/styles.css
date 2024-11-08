@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding:  10px 20px;
     background: #111111;
 }
 
@@ -180,23 +180,50 @@ p {
 }
 
 button {
-    padding: 8px 12px;
-    background-color: var(--button-color);
-    color: var(--text-color);
-    border: 2px solid transparent;
-    border-radius: 5px;
+    padding: 10px 20px; /* Adds padding for width and height */
+    background-color: #800080; /* Purple background color */
+    color: white; /* White text color */
+    font-weight: bolder;
+    border: none; /* Removes default border */
+    border-radius: 20px; /* Creates the rounded shape */
     cursor: pointer;
-    transition: background-color 0.3s, border 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
 }
 
 button:hover {
-    background-color: var(--accent-color);
-    border: 2px solid var(--text-color);
+    background-color: #37dcd1;/* Slightly lighter purple on hover */
+    transform: scale(1.1); /* Pop-out effect (increases size slightly) */
+   color: #000000;
+    
 }
 
 /* Footer Styling */
 footer {
-    text-align: center;
-    padding: 10px 0;
     background-color: #111111;
+    padding: 20px 0;
+    text-align: center;
 }
+
+/* Footer Container */
+.footer-container {
+    max-width: 1200px; /* Matches main content width */
+    margin: 0 auto; /* Centers the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Horizontal Line Above Footer */
+.footer-line {
+    border: none;
+    border-top: 1px solid #444444; /* Line color */
+    width: 85%; /* Centered line width */
+    margin: 0 auto 20px auto; /* Centers the line and adds space below */
+}
+
+/* Footer Text Styling */
+footer p {
+    margin: 0; /* Removes any default margin */
+}
+
+
