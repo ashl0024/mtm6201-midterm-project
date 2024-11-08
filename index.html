@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href=""
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The System</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/icon.png">
 </head>
 <body>
-    
+  <!-- Skip links for accessibility (hidden by default, shown only on focus) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#locals-title" class="skip-link">Skip to Meet the Locals</a>
+
+  <!-- Centered container for main content -->
+  <div class="container">
+    <header>
+       <h1> THE  <span class="stripe">SYSTEM</span> </h1>
+      <nav>
+        <a href="#">Planets</a>
+        <a href="#">Interstellar</a>
+        <a href="#" class="btn-contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="wrapper" aria-labelledby="hero-title">
+        <img src="images/milky-way.jpg" alt="A view of the Milky Way galaxy" class="hero-image" />
+        <div class="text">
+          <p class="small-text">THE SYSTEM MAGAZINE</p>
+          <h2> Welcome to the  <span class="colorShift">Solar System</span></h2>
+          <p>Take a tour around the coolest stellar system around.</p>
+        </div>
+      </section>
+
+      <!-- Meet the Locals Section -->
+      <section class="meet-locals" aria-labelledby="locals-title">
+        <h2 id="locals-title">Meet the Locals</h2>
+        
+        <div class="planet-card">
+          <img src="images/sun.jpg" alt="The Sun">
+          <h3>The Sun</h3>
+          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Sun'">Learn More</button>
+        </div>
+
+        <div class="planet-card">
+          <img src="images/mercury.jpg" alt="Mercury">
+          <h3>Mercury</h3>
+          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Mercury_(planet)'">Learn More</button>
+        </div>
+
+        <div class="planet-card">
+          <img src="images/venus.jpg" alt="Venus">
+          <h3>Venus</h3>
+          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Venus'">Learn More</button>
+        </div>
+
+        <div class="planet-card">
+          <img src="images/earth.jpg" alt="Earth">
+          <h3>Earth</h3>
+          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Earth'">Learn More</button>
+        </div>
+
+        <div class="planet-card">
+          <img src="images/moon.jpg" alt="The Moon">
+          <h3>The Moon</h3>
+          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Moon'">Learn More</button>
+        </div>
+
+        <div class="planet-card">
+          <img src="images/mars.jpg" alt="Mars">
+          <h3>Mars</h3>
+          <button onclick="window.location.href='https://en.wikipedia.org/wiki/Mars'">Learn More</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 - The System</p>
+    </footer>
+  </div>
 </body>
 </html>
