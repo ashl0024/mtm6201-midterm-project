@@ -10,6 +10,7 @@ body {
 .skip-link {
     position: absolute;
     left: -9999px;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Hide skip links by default and show on focus for accessibility */
