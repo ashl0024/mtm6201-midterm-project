@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The System</title>
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reset.css">  <!-- Reset CSS to normalize styles across browsers -->
   <link rel="stylesheet" href="css/styles.css">
+   <!-- Link to Google Fonts for custom typography -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
   <link rel="icon" href="images/icon.png">
 </head>
@@ -14,21 +15,24 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <a href="#locals-title" class="skip-link">Skip to Meet the Locals</a>
 
-  <!-- Centered container for main content -->
+  <!-- Main Wrapper to center the content and control the maximum width of the webpage -->
   <div class="webpage-wrapper">
      <header>
+        <!-- Page title with stripe effect on "SYSTEM" -->
        <h1> THE  <span class="stripe">SYSTEM</span> </h1>
+       <!-- Navigation menu with links for "Planets", "Interstellar", and "Contact" -->
         <nav class="nav-link">
-        <a href="#">Planets</a>
-        <a href="#">Interstellar</a>
-        <a href="#" class="btn-contact">Contact</a>
+         <a href="#">Planets</a>
+         <a href="#">Interstellar</a>
+         <a href="#" class="btn-contact">Contact</a>
         </nav>
-        </header>
+      </header>
 
         <main id="main-content">
-          <!-- Hero Section -->
+          <!-- Hero Section with background image and title text -->
           <section class="wrappermilkway" aria-labelledby="hero-title">
             <img src="images/milky-way.jpg" alt="A view of the Milky Way galaxy" class="hero-image" />
+            <!-- Text showing on the hero image as small tagline, main title with color-shifting effect and subtitle as well.  -->
             <div class="text">
               <p class="small-text">THE SYSTEM MAGAZINE</p>
               <h2> Welcome to the  <span class="colorShift">Solar System</span></h2>
@@ -36,7 +40,7 @@
             </div>
           </section>
 
-          <!-- Meet the Locals Section -->
+          <!-- Meet the Locals Section includes planets with images and buttons linked to webpages. -->
            <section>
           <h2 class="locals-title">Meet the Locals</h2>
           <div class="meet-locals" aria-labelledby="locals-title">
@@ -93,11 +97,12 @@
             </div>
            </section>
         </main>
-
+      <!-- footer section  -->
         <footer>
             <div class="footer-container">
-              <hr class="footer-line"> <!-- Line above footer content -->
-              <p>&copy; 2024 - The System</p>
+              <hr class="footer-line"> <!--  horizontal Line above footer content -->
+              <p>&copy; 2024 - The System</p> <!-- Footer text with copyright information -->
+            </div>
         </div>
       </footer>
     </div>
